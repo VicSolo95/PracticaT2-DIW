@@ -1,0 +1,1423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practica T2_DIW_Ejercicio 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body class="bg-light">
+    <div class="row m-0 p-0 position-absolute" id="Navbar" style="z-index: 100">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white d-flex justify-content-between">
+            <div class="row m-0 p-0 mx-auto" id="InnerNavbar">
+                <div class="container-fluid d-flex m-0 p-0">
+                    <a class="navbar-brand order-2 order-lg-1" href="#">
+                        <img src="img/logos/demo2-sticky.png" style="height: 1.8rem;">
+                    </a>
+                    <button class="navbar-toggler order-1 order-lg-2" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse order-lg-2" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <button class="btn btn-light text-blue fw-semibold">Dashboards</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn bg-transparent text-muted fw-semibold">Pages</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn bg-transparent text-muted fw-semibold">Apps</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn bg-transparent text-muted fw-semibold">Help</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-fluid m-0 p-0 d-flex align-items-center order-3">
+                        <div class="container m-0 p-0 d-flex justify-content-end">
+                            <button class="m-0 p-0 me-1 me-lg-4 bg-transparent" style="border: none;">
+                                <img src="img/svg/navbar/1.svg" style="opacity: 30%; border-radius: 10%; height: 2rem;">
+                            </button>
+                            <button class="m-0 p-0 me-1 me-lg-4 bg-transparent" style="border: none;">
+                                <img src="img/svg/navbar/2.svg" style="opacity: 30%; border-radius: 10%; height: 2rem;">
+                            </button>
+                            <button class="m-0 p-0 me-1 me-lg-4 bg-transparent" style="border: none;">
+                                <img src="img/svg/navbar/3.svg" style="opacity: 30%; border-radius: 10%; height: 2rem;">
+                            </button>
+                            <button class="m-0 p-0 me-1 me-lg-4 bg-transparent" style="border: none;">
+                                <img src="img/svg/navbar/4.svg" style="opacity: 30%; border-radius: 10%; height: 2rem;">
+                            </button>
+                            <button class="m-0 p-0 me-1 me-lg-4 bg-transparent" style="border: none;">
+                                <img src="img/svg/navbar/5.svg" style="opacity: 30%; border-radius: 10%; height: 2rem;">
+                            </button>
+                            <button class="m-0 p-0 me-1 me-lg-4 bg-transparent" style="border: none;">
+                                <img src="img/svg/navbar/6.svg" style="opacity: 30%; border-radius: 10%; height: 2rem;">
+                            </button>
+                            <button class="m-0 p-0 bg-transparent" style="border: none;">
+                                <img src="img/avatars/300-2.jpg"
+                                    style="opacity: 100%; border-radius: 10%; height: 2rem;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container-fluid m-0 p-0 bg-secondary position-absolute" id="Background" style="top:0;">
+        <div class="row m-0 p-0" id="Header" style="height:22rem">
+            <img src="img/patterns/header-bg.jpg" class="m-0 p-0" style="height:100%">
+        </div>
+    </div>
+    <div class="container-fluid m-0 p-0 position-absolute" id="Wrapper">
+        <div class="row m-0 p-0 mx-auto" id="Inner">
+
+            <div class="row m-0 p-0 text-white" id="Principal">
+                <div class="row m-0 p-0 my-5 py-5 align-items-center">
+                    <div class="row m-0 p-0 col-6">
+                        <h3 class="m-0 p-0">Dashboard</h3>
+                        <p class="m-0 p-0 fw-semibold">Home - Dashboards - Default</p>
+                    </div>
+                    <div class="row m-0 p-0 col-6">
+                        <div class="container-fluid m-0 p-0 d-flex justify-content-end">
+                            <button class="btn d-flex ms-2 text-center position-relative" href="#" role="button">
+                                <div class="card m-0 p-0 bg-white position-absolute h-100 w-100"
+                                    style="opacity: 20%; top:0; left: 0;"></div>
+                                <img src="img/svg/filter.svg" class="filter-invert px-1">
+                                Filter
+                            </button>
+                            <a class="btn bg-white ms-2 text-center" href="#" role="button">Create</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--APARTADO 1------------------------------------------------------------------------------------------------------------------------------------------------------>
+            <div class="row m-0 p-0" id="Apartado_1">
+
+                <!--TRENDS-->
+
+                <div class="row m-0 p-2 col-lg-4">
+                    <div class="card m-0 p-0" id="Trend">
+                        <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                            <div class="row m-0 p-0">
+                                <div class="container-fluid col-6 m-0 p-0">
+                                    <h5 class="m-0 p-0">Trends</h5>
+                                    <p class="m-0 p-0 text-muted fw-semibold">Latest Trends</p>
+                                </div>
+                                <div
+                                    class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                    <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                        <img src="img/svg/menu.svg" class="filter-blue" style="height: 100%">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0">
+                                <img class="m-0 p-0" src="img/svg/trends.svg" style="height: auto; width: 100%;">
+                            </div>
+                            <div class="row m-0 p-0 mt-3">
+                                <div class="row m-0 p-0 col-2">
+                                    <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                        <img src="img/svg/brand-logos/plurk.svg">
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0 ps-2 col-8">
+                                    <h5 class="m-0 p-0">Top Authors</h5>
+                                    <p class="m-0 p-0 text-muted fw-semibold">Ricky Hunt, Sandra Trepp</p>
+                                </div>
+                                <div class="row m-0 p-0 col-2">
+                                    <div class="container m-0 p-0 my-2 bg-light d-flex align-items-center justify-content-center"
+                                        style="border-radius: 10%;">
+                                        <p class="m-0 p-0 text-muted fw-semibold">+82$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 mt-3">
+                                <div class="row m-0 p-0 col-2">
+                                    <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                        <img src="img/svg/brand-logos/figma-1.svg" style="height: 1.8rem;">
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0 ps-2 col-8">
+                                    <h5 class="m-0 p-0">Top Sales</h5>
+                                    <p class="m-0 p-0 text-muted fw-semibold">PitStop Emails</p>
+                                </div>
+                                <div class="row m-0 p-0 col-2">
+                                    <div class="container m-0 p-0 my-2 bg-light d-flex align-items-center justify-content-center"
+                                        style="border-radius: 10%;">
+                                        <p class="m-0 p-0 text-muted fw-semibold">+82$</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0 p-0 mt-3 mb-5">
+                                <div class="row m-0 p-0 col-2">
+                                    <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                        <img src="img/svg/brand-logos/vimeo.svg">
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0 ps-2 col-8">
+                                    <h5 class="m-0 p-0">Top Engaement</h5>
+                                    <p class="m-0 p-0 text-muted fw-semibold">KT.com</p>
+                                </div>
+                                <div class="row m-0 p-0 col-2">
+                                    <div class="container m-0 p-0 my-2 bg-light d-flex align-items-center justify-content-center"
+                                        style="border-radius: 10%;">
+                                        <p class="m-0 p-0 text-muted fw-semibold">+82$</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-0 p-0 col-lg-8">
+
+                    <!--COMPANY-->
+
+                    <div class="row m-0 p-2 col-lg-3">
+                        <div class="card m-0 p-0"
+                            style="background-image: url(img/stock/600x600/img-22.jpg);background-size: cover;"
+                            id="Company">
+                            <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                <div class="row m-0 p-0">
+                                    <div class="container-fluid m-0 p-0">
+                                        <h5 class="m-0 p-0">Company</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CRM-->
+
+                    <div class="row m-0 p-2 col-lg-9">
+                        <div class="card m-0 p-0" id="CRM">
+                            <div class="row m-0 p-0 my-auto mx-auto" id="InnerCard">
+                                <div class="row m-0 p-0">
+                                    <div class="container-fluid col-9 m-0 p-0">
+                                        <h5 class="m-0 p-0">Create CRM Reports</h5>
+                                        <p class="m-0 p-0 text-muted fw-semibold">Generate the latest CRM report for
+                                            company projects</p>
+                                    </div>
+                                    <div
+                                        class="container-fluid col-3 m-0 p-0 d-flex justify-content-end align-items-center">
+                                        <button class="btn bg-blue btn-sm m-0 p-1 me-2">Start Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0 p-0">
+                        <div class="row m-0 p-0 col-lg-6">
+
+                            <!--SAAS-->
+
+                            <div class="row m-0 p-2 mb-1 text-white">
+                                <div class="card m-0 p-0" style="background-color: #663259;height: 100%;" id="SaaS">
+                                    <div class="row m-0 p-0"
+                                        style="height: 100%; background-image: url(img/svg/misc/taieri.svg); background-size: 100% 100%;">
+                                        <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                            <div class="row  col-6 m-0 p-0">
+                                                <div class="container-fluid m-0 p-0">
+                                                    <h5 class="m-0 p-0">Create SaaS Based Reports</h5>
+                                                </div>
+                                                <div class="container-fluid m-0 p-0 mt-4 align-items-center">
+                                                    <button class="btn btn-sm m-0 p-1 me-2 text-white"
+                                                        style="width: 10rem; height: 2.5rem; background-color: #f1416cff;">Create
+                                                        Campaign</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row m-0 p-0">
+
+                                <!--NEW PRODUCTS-->
+
+                                <div class="row m-0 p-2 mt-1 col-lg-6 text-white">
+                                    <div class="card m-0 p-0 bg-blue" id="New_Products">
+                                        <div class="row m-0 p-0">
+                                            <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                                <div class="row m-0 p-0 mx-3">
+                                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                                        <img class="m-0 p-0 filter-invert" src="img/svg/menu2.svg"
+                                                            style="height: 2rem; width: auto;">
+                                                    </div>
+                                                    <div class="container-fluid m-0 p-0 mt-3">
+                                                        <h3 class="m-0 p-0">790</h3>
+                                                        <h6 class="m-0 p-0">New Products</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--NEW CUSTOMERS-->
+
+                                <div class="row m-0 p-2 mt-1 col-lg-6">
+                                    <div class="card m-0 p-0" id="New_Customers">
+                                        <div class="row m-0 p-0">
+                                            <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                                <div class="row m-0 p-0 mx-3">
+                                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                                        <img class="m-0 p-0 filter-green" src="img/svg/Rocket.svg"
+                                                            style="height: 2rem; width: auto;">
+                                                    </div>
+                                                    <div class="container-fluid m-0 p-0 mt-3">
+                                                        <h3 class="m-0 p-0">8,600</h3>
+                                                        <h6 class="m-0 p-0 text-muted">New Customers</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--REPORTS-->
+
+                        <div class="row m-0 p-0 col-lg-6 text-white">
+                            <div class="row m-0 p-2">
+                                <div class="card m-0 p-0" id="Reports"
+                                    style="background-image: url(img/misc/bg-2.jpg); background-size: cover;">
+                                    <div class="row m-1 p-0" style="height: 100%;">
+                                        <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                            <div class="row col-6 m-0 p-0 d-flex align-items-start flex-column">
+                                                <div class="container-fluid m-0 p-0 mb-auto">
+                                                    <h5 class="m-0 p-0">Create Reports With App</h5>
+                                                </div>
+                                                <div class="container-fluid m-0 p-0 mt-4 align-items-center">
+                                                    <button
+                                                        class="btn btn-sm bg-transparent m-0 p-1 me-2 fw-bold text-warning"
+                                                        style="width: 10rem; height: 2.5rem;">Create Report --></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--APARTADO 2------------------------------------------------------------------------------------------------------------------------------------>
+                <div class="row m-0 p-0 position-relative" id="Apartado_2">
+
+                    <!--SALES STATISTICS-->
+
+                    <div class="row m-0 p-2 col-lg-4">
+                        <div class="row m-0 p-0" style="height: 100%" id="Background">
+
+                            <div class="card m-0 p-0 position-relative" id="Sales">
+                                <div class="card m-0 p-0 position-absolute"
+                                    style="top: 0; z-index: 0;background-color: #f1416cff; height:50%;width: 100%;">
+                                </div>
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0" style="z-index: 10;">
+                                        <div class="container-fluid col-6 m-0 p-0 text-white">
+                                            <h5 class="m-0 p-0">Sales Statistics</h5>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                                <img src="img/svg/menu.svg" class="filter-invert" style="height: 100%">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0" style="z-index: 10;">
+                                        <img class="m-0 p-0" src="img/svg/Sales.svg" style="height: auto; width: 100%;">
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3">
+                                        <div class="row m-0 p-2 col-6">
+                                            <div class="card m-0 p-0 text-warning" id="Sales_1">
+                                                <div class="card m-0 p-0 bg-warning position-absolute h-100 w-100"
+                                                    style="opacity: 20%; top:0; left: 0;"></div>
+                                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                                        <img class="m-0 p-0 filter-yellow" src="img/svg/Chart.svg"
+                                                            style="height: 2.5rem; width: auto;">
+                                                    </div>
+                                                    <div class="container-fluid m-0 p-0 mt-3">
+                                                        <h6 class="m-0 p-0">Weekly Sales</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-2 col-6">
+                                            <div class="card m-0 p-0 text-blue" id="Sales_2">
+                                                <div class="card m-0 p-0 bg-blue position-absolute h-100 w-100"
+                                                    style="opacity: 20%; top:0; left: 0;"></div>
+                                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                                        <img class="m-0 p-0 filter-blue" src="img/svg/Suitcase.svg"
+                                                            style="height: 2.5rem; width: auto;">
+                                                    </div>
+                                                    <div class="container-fluid m-0 p-0 mt-3">
+                                                        <h6 class="m-0 p-0">New Projects</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-2 col-6">
+                                            <div class="card m-0 p-0 text-red" id="Sales_3">
+                                                <div class="card m-0 p-0 bg-red position-absolute h-100 w-100"
+                                                    style="opacity: 20%; top:0; left: 0;"></div>
+                                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                                        <img class="m-0 p-0 filter-red" src="img/svg/Layers.svg"
+                                                            style="height: 2.5rem; width: auto;">
+                                                    </div>
+                                                    <div class="container-fluid m-0 p-0 mt-3">
+                                                        <h6 class="m-0 p-0">Item Orders</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-2 col-6">
+                                            <div class="card m-0 p-0 text-green" id="Sales_4">
+                                                <div class="card m-0 p-0 bg-green position-absolute h-100 w-100"
+                                                    style="opacity: 20%; top:0; left: 0;"></div>
+                                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                                    <div class="row m-0 p-0 d-flex justify-content-start">
+                                                        <img class="m-0 p-0 filter-green" src="img/svg/Card.svg"
+                                                            style="height: 2.5rem; width: auto;">
+                                                    </div>
+                                                    <div class="container-fluid m-0 p-0 mt-3">
+                                                        <h6 class="m-0 p-0">Bug Reports</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ACTIVITIES-->
+
+                    <div class="row m-0 p-2 col-lg-4">
+                        <div class="card m-0 p-0" id="Activities">
+                            <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                <div class="row m-0 p-0">
+                                    <div class="container-fluid col-6 m-0 p-0">
+                                        <h5 class="m-0 p-0">Activities</h5>
+                                        <p class="m-0 p-0 text-muted fw-semibold">890,344 Sales</p>
+                                    </div>
+                                    <div
+                                        class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                        <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                            <img src="img/svg/menu.svg" class="filter-blue" style="height: 100%">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0 position-relative" style="height: 100%;">
+                                    <div class="container m-0 p-0 bg-secondary position-absolute"
+                                        style="top: 90%; left:4.45rem; height: 950%; width: 3px;" id="Divider"></div>
+                                </div>
+                                <div class="row m-0 p-0 position-absolute" style="top: 15%;">
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">08:42</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-warning text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 text-muted">Outlines keep you honest. And keep structure
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">10:00</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-green text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 fw-bold">AEOL meeting</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">14:37</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-red text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 fw-bold">Make deposit <a href="#" class="text-blue">USD
+                                                    700</a>. to ESL</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">16:50</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-blue text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 text-muted">Indulging in poorly driving and keep
+                                                structure
+                                                keep great</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">21:03</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-red text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 fw-bold">New order placed <a href="#"
+                                                    class="text-blue">#XF-2356</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">16:50</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-blue text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 text-muted">Indulging in poorly driving and keep
+                                                structure
+                                                keep great</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">21:03</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-red text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 fw-bold">New order placed <a href="#"
+                                                    class="text-blue">#XF-2356</a></h6>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3 me-5 pe-5">
+                                        <div class="container-fluid col-2 m-0 p-0 mt-1 d-flex justify-content-center">
+                                            <h6 class="m-0 p-0 fw-bold">10:30</h6>
+                                        </div>
+                                        <div class="container-fluid col-1 m-0 p-0 d-flex justify-content-center">
+                                            <i class="fa fa-solid fa-genderless text-green text-start"
+                                                style="font-size: 2rem;"></i>
+                                        </div>
+                                        <div class="container-fluid col-9 m-0 p-0 ps-1 mt-1">
+                                            <h6 class="m-0 p-0 text-muted">Finance KPI Mobile app launch preparion
+                                                meeting
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0 p-0 col-lg-4">
+
+                        <!--GENERATE REPORTS-->
+
+                        <div class="row m-0 p-2">
+                            <div class="card m-0 p-0" id="Generate_Reports">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-8 m-0 p-0">
+                                            <h5 class="m-0 p-0">Generate Reports</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Finance and accounting reports</p>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-4 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2">
+                                                <h5 class="m-0 p-0 filter-blue">$24,500</h5>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0" style="height: 100%;">
+                                    <img class="m-0 p-0" src="img/svg/Generate_Reports.svg"
+                                        style="height: auto; width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--SALES-->
+
+                        <div class="row m-0 p-2">
+                            <div class="card m-0 p-0" id="Sales_Only">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-8 m-0 p-0">
+                                            <h5 class="m-0 p-0">Sales</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Oct 8 - Oct 26 22</p>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-4 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2">
+                                                <h5 class="m-0 p-0 filter-blue">$15,300</h5>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-0 p-0">
+                                    <img class="m-0 p-0" src="img/svg/Sales_only.svg"
+                                        style="height: auto; width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--APARTADO 3------------------------------------------------------------------------------------------------------------------------------------------------------>
+                    <div class="row m-0 p-0" id="Apartado_3">
+
+                        <!--TO DO-->
+
+                        <div class="row m-0 p-2 col-lg-4">
+                            <div class="card m-0 p-0" id="Todo">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-6 m-0 p-0">
+                                            <h5 class="m-0 p-0">Todo</h5>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                                <img src="img/svg/menu.svg" class="filter-blue" style="height: 100%">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 my-3">
+                                        <div class="row m-0 p-0 mt-3">
+                                            <div class="row m-0 p-0 col-2">
+                                                <div class="row m-0 p-0 col-6 my-auto" style="height: 100%;">
+                                                    <div class="container m-0 p-0 bg-green"
+                                                        style="width: 4px; height:100%; border-radius: 10%;">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 p-0 col-6 my-auto"
+                                                    style="height: 1.5rem; width: 1.5rem">
+                                                    <div class="container m-0 p-0" style="height: 100%;">
+                                                        <input class="form-check-input bg-light m-0 p-0" type="checkbox" value=""
+                                                            id="flexCheckDefault" style="height:100%; width:100%; border:none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 ps-2 col-8">
+                                                <h6 class="m-0 p-0">Create FireStone Logo</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 2 Days</p>
+                                            </div>
+                                            <div class="row m-0 p-0 col-2">
+                                                <div
+                                                    class="container m-0 p-0 my-2 d-flex align-items-center justify-content-center">
+                                                    <span
+                                                        class="badge text-dark filter-green fs-8 fw-bold">New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 mt-3">
+                                            <div class="row m-0 p-0 col-2">
+                                                <div class="row m-0 p-0 col-6 my-auto" style="height: 100%;">
+                                                    <div class="container m-0 p-0 bg-blue"
+                                                        style="width: 4px; height:100%; border-radius: 10%;">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 p-0 col-6 my-auto"
+                                                    style="height: 1.5rem; width: 1.5rem">
+                                                    <div class="container m-0 p-0" style="height: 100%;">
+                                                        <input class="form-check-input bg-light m-0 p-0" type="checkbox" value=""
+                                                            id="flexCheckDefault" style="height:100%; width:100%; border:none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 ps-2 col-8">
+                                                <h6 class="m-0 p-0">Stakeholder Meeting</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 3 Days</p>
+                                            </div>
+                                            <div class="row m-0 p-0 col-2">
+                                                <div
+                                                    class="container m-0 p-0 my-2 d-flex align-items-center justify-content-center">
+                                                    <span class="badge text-blue filter-blue fs-8 fw-bold">New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 mt-3">
+                                            <div class="row m-0 p-0 col-2">
+                                                <div class="row m-0 p-0 col-6 my-auto" style="height: 100%;">
+                                                    <div class="container m-0 p-0 bg-warning"
+                                                        style="width: 4px; height:100%; border-radius: 10%;">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 p-0 col-6 my-auto"
+                                                    style="height: 1.5rem; width: 1.5rem">
+                                                    <div class="container m-0 p-0" style="height: 100%;">
+                                                        <input class="form-check-input bg-light m-0 p-0" type="checkbox" value=""
+                                                            id="flexCheckDefault" style="height:100%; width:100%; border:none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 ps-2 col-8">
+                                                <h6 class="m-0 p-0">Scoping & Estimations</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 5 Days</p>
+                                            </div>
+                                            <div class="row m-0 p-0 col-2">
+                                                <div
+                                                    class="container m-0 p-0 my-2 d-flex align-items-center justify-content-center">
+                                                    <span
+                                                        class="badge text-blue filter-yellow fs-8 fw-bold">New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 mt-3">
+                                            <div class="row m-0 p-0 col-2">
+                                                <div class="row m-0 p-0 col-6 my-auto" style="height: 100%;">
+                                                    <div class="container m-0 p-0 bg-blue"
+                                                        style="width: 4px; height:100%; border-radius: 10%;">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 p-0 col-6 my-auto"
+                                                    style="height: 1.5rem; width: 1.5rem">
+                                                    <div class="container m-0 p-0" style="height: 100%;">
+                                                        <input class="form-check-input bg-light m-0 p-0" type="checkbox" value=""
+                                                            id="flexCheckDefault" style="height:100%; width:100%; border:none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 ps-2 col-8">
+                                                <h6 class="m-0 p-0">KPI App Showcase</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 2 Days</p>
+                                            </div>
+                                            <div class="row m-0 p-0 col-2">
+                                                <div
+                                                    class="container m-0 p-0 my-2 d-flex align-items-center justify-content-center">
+                                                    <span class="badge text-blue filter-blue fs-8 fw-bold">New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 mt-3">
+                                            <div class="row m-0 p-0 col-2">
+                                                <div class="row m-0 p-0 col-6 my-auto" style="height: 100%;">
+                                                    <div class="container m-0 p-0 bg-red"
+                                                        style="width: 4px; height:100%; border-radius: 10%;">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 p-0 col-6 my-auto"
+                                                    style="height: 1.5rem; width: 1.5rem">
+                                                    <div class="container m-0 p-0" style="height: 100%;">
+                                                        <input class="form-check-input bg-light m-0 p-0" type="checkbox" value=""
+                                                            id="flexCheckDefault" style="height:100%; width:100%; border:none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 ps-2 col-8">
+                                                <h6 class="m-0 p-0">Project Meeting</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 12 Days</p>
+                                            </div>
+                                            <div class="row m-0 p-0 col-2">
+                                                <div
+                                                    class="container m-0 p-0 my-2 d-flex align-items-center justify-content-center">
+                                                    <span class="badge text-light filter-red fs-8 fw-bold">New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 mt-3">
+                                            <div class="row m-0 p-0 col-2">
+                                                <div class="row m-0 p-0 col-6 my-auto" style="height: 100%;">
+                                                    <div class="container m-0 p-0 bg-green"
+                                                        style="width: 4px; height:100%; border-radius: 10%;">
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 p-0 col-6 my-auto"
+                                                    style="height: 1.5rem; width: 1.5rem">
+                                                    <div class="container m-0 p-0" style="height: 100%;">
+                                                        <input class="form-check-input bg-light m-0 p-0" type="checkbox" value=""
+                                                            id="flexCheckDefault" style="height:100%; width:100%; border:none">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 p-0 ps-2 col-8">
+                                                <h6 class="m-0 p-0">Custom Update</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 1 Week</p>
+                                            </div>
+                                            <div class="row m-0 p-0 col-2">
+                                                <div
+                                                    class="container m-0 p-0 my-2 d-flex align-items-center justify-content-center">
+                                                    <span
+                                                        class="badge text-dark filter-green fs-8 fw-bold">New</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--MEMBER STATISTICS-->
+
+                        <div class="row m-0 p-2 col-lg-8">
+                            <div class="card m-0 p-0" id="Members">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard" style="width: 95%;">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-8 m-0 p-0">
+                                            <h5 class="m-0 p-0">Members Statistics</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Over 500 members</p>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-4 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn bg-blue btn-sm m-0 my-1 py-1 d-flex align-items-center"
+                                                style="width: 10rem; height: 2rem">
+                                                <img src="img/svg/plus.svg" class="p-2 filter-invert">New
+                                                Member</button>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3" id="Tabla">
+                                        <table class="table align-middle">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">
+                                                        <input class="form-check-input bg-light m-0 p-0 fs-5" type="checkbox"
+                                                            value="" id="flexCheckDefault" style="border: none;">
+                                                    </th>
+                                                    <th scope="col">Authors</th>
+                                                    <th scope="col">Company</th>
+                                                    <th scope="col">Progress</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="d-flex">
+                                                        <input class="form-check-input bg-light m-0 p-0 fs-5" type="checkbox"
+                                                            value="" id="flexCheckDefault" style="border: none;">
+                                                    </th>
+                                                    <td>
+                                                        <div class="d-flex m-0 p-0" id="T_Author">
+                                                            <div class="d-flex m-0 p-0 col-3">
+                                                                <div class="container-fluid m-0 p-0"
+                                                                    style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-14.jpg); background-size: cover;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0 p-0 col-9">
+                                                                <h6 class="m-0 p-0">Ana Simmons</h6>
+                                                                <p class="m-0 p-0 text-muted fw-semibold">HTML, JS,
+                                                                    ReactJS</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex flex-column m-0 p-0" id="T_Company">
+                                                            <h6 class="m-0 p-0">Intertico</h6>
+                                                            <p class="m-0 p-0 text-muted fw-semibold">Web, UI/UX Design
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-3">
+                                                        <div class="d-flex flex-column m-0 p-0" id="T_Progress">
+                                                            <p class="m-0 p-0 text-muted fw-semibold">50%</p>
+                                                            <div class="progress p-0" style="height: 7px;">
+                                                                <div class="progress-bar bg-blue w-50" role="progressbar"
+                                                                    aria-label="Basic example" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-2">
+                                                        <div class="d-flex m-0 p-0" id="T_Actions">
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input class="form-check-input bg-light m-0 p-0 fs-5" type="checkbox"
+                                                            value="" id="flexCheckDefault" style="border: none;">
+                                                    </th>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <div class="row m-0 p-0 col-3">
+                                                                <div class="container-fluid m-0 p-0"
+                                                                    style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-2.jpg); background-size: cover;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0 p-0 col-9">
+                                                                <h6 class="m-0 p-0">Ana Simmons</h6>
+                                                                <p class="m-0 p-0 text-muted fw-semibold">HTML, JS,
+                                                                    ReactJS</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <h6 class="m-0 p-0">Intertico</h6>
+                                                            <p class="m-0 p-0 text-muted fw-semibold">Web, UI/UX Design
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-3">
+                                                        <div class="row m-0 p-0">
+                                                            <p class="m-0 p-0 text-muted fw-semibold">70%</p>
+                                                            <div class="progress p-0" style="height: 7px;">
+                                                                <div class="progress-bar bg-red" style="width: 70%" role="progressbar"
+                                                                    aria-label="Basic example" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-2">
+                                                        <div class="row m-0 p-0">
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input class="form-check-input bg-light m-0 p-0 fs-5" type="checkbox"
+                                                            value="" id="flexCheckDefault" style="border: none;">
+                                                    </th>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <div class="row m-0 p-0 col-3">
+                                                                <div class="container-fluid m-0 p-0"
+                                                                    style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-5.jpg); background-size: cover;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0 p-0 col-9">
+                                                                <h6 class="m-0 p-0">Ana Simmons</h6>
+                                                                <p class="m-0 p-0 text-muted fw-semibold">HTML, JS,
+                                                                    ReactJS</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <h6 class="m-0 p-0">Intertico</h6>
+                                                            <p class="m-0 p-0 text-muted fw-semibold">Web, UI/UX Design
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-3">
+                                                        <div class="row m-0 p-0">
+                                                            <p class="m-0 p-0 text-muted fw-semibold">60%</p>
+                                                            <div class="progress p-0" style="height: 7px;">
+                                                                <div class="progress-bar bg-green" style="width: 60%" role="progressbar"
+                                                                    aria-label="Basic example" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-2">
+                                                        <div class="row m-0 p-0">
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input class="form-check-input bg-light m-0 p-0 fs-5" type="checkbox"
+                                                            value="" id="flexCheckDefault" style="border: none;">
+                                                    </th>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <div class="row m-0 p-0 col-3">
+                                                                <div class="container-fluid m-0 p-0"
+                                                                    style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-20.jpg); background-size: cover;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0 p-0 col-9">
+                                                                <h6 class="m-0 p-0">Ana Simmons</h6>
+                                                                <p class="m-0 p-0 text-muted fw-semibold">HTML, JS,
+                                                                    ReactJS</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <h6 class="m-0 p-0">Intertico</h6>
+                                                            <p class="m-0 p-0 text-muted fw-semibold">Web, UI/UX Design
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-3">
+                                                        <div class="row m-0 p-0">
+                                                            <p class="m-0 p-0 text-muted fw-semibold">50%</p>
+                                                            <div class="progress p-0" style="height: 7px;">
+                                                                <div class="progress-bar bg-warning w-50" role="progressbar"
+                                                                    aria-label="Basic example" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-2">
+                                                        <div class="row m-0 p-0">
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <input class="form-check-input bg-light m-0 p-0 fs-5" type="checkbox"
+                                                            value="" id="flexCheckDefault" style="border: none;">
+                                                    </th>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <div class="row m-0 p-0 col-3">
+                                                                <div class="container-fluid m-0 p-0"
+                                                                    style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-23.jpg); background-size: cover;">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0 p-0 col-9">
+                                                                <h6 class="m-0 p-0">Ana Simmons</h6>
+                                                                <p class="m-0 p-0 text-muted fw-semibold">HTML, JS,
+                                                                    ReactJS</p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="row m-0 p-0">
+                                                            <h6 class="m-0 p-0">Intertico</h6>
+                                                            <p class="m-0 p-0 text-muted fw-semibold">Web, UI/UX Design
+                                                            </p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-3">
+                                                        <div class="row m-0 p-0">
+                                                            <p class="m-0 p-0 text-muted fw-semibold">90%</p>
+                                                            <div class="progress p-0" style="height: 7px;">
+                                                                <div class="progress-bar bg-purple" style="width: 90%" role="progressbar"
+                                                                    aria-label="Basic example" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="col-2">
+                                                        <div class="row m-0 p-0">
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="container col-4 m-0 p-0 pe-1">
+                                                                <div class="btn bg-light p-0"
+                                                                    style="width: 100%; height: 100%;">
+                                                                    <img src="img/svg/Card.svg">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--APARTADO 4------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+                    <div class="row m-0 p-0" id="Apartado_4">
+
+                        <!--AUTHORS-->
+
+                        <div class="row m-0 p-2 col-lg-4">
+                            <div class="card m-0 p-0" id="Authors">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-6 m-0 p-0">
+                                            <h5 class="m-0 p-0">Authors</h5>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                                <img src="img/svg/menu.svg" class="filter-blue" style="height: 100%">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 my-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container-fluid m-0 p-0"
+                                                style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-6.jpg); background-size: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 col-10">
+                                            <h6 class="m-0 p-0">Ana Simmons</h6>
+                                            <p class="m-0 p-0 text-muted fw-semibold">HTML, JS, ReactJS</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 my-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container-fluid m-0 p-0"
+                                                style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-5.jpg); background-size: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 col-10">
+                                            <h6 class="m-0 p-0">Ana Simmons</h6>
+                                            <p class="m-0 p-0 text-muted fw-semibold">HTML, JS, ReactJS</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 my-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container-fluid m-0 p-0"
+                                                style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-11.jpg); background-size: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 col-10">
+                                            <h6 class="m-0 p-0">Ana Simmons</h6>
+                                            <p class="m-0 p-0 text-muted fw-semibold">HTML, JS, ReactJS</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 my-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container-fluid m-0 p-0"
+                                                style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-9.jpg); background-size: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 col-10">
+                                            <h6 class="m-0 p-0">Ana Simmons</h6>
+                                            <p class="m-0 p-0 text-muted fw-semibold">HTML, JS, ReactJS</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 my-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container-fluid m-0 p-0"
+                                                style="height: 3rem; width: 3rem; border-radius:10%; background-image: url(img/avatars/300-23.jpg); background-size: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 col-10">
+                                            <h6 class="m-0 p-0">Ana Simmons</h6>
+                                            <p class="m-0 p-0 text-muted fw-semibold">HTML, JS, ReactJS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--NOTIFICATIONS-->
+
+                        <div class="row m-0 p-2 col-lg-4">
+                            <div class="card m-0 p-0" id="Notifications">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-6 m-0 p-0">
+                                            <h5 class="m-0 p-0">Notifications</h5>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                                <img src="img/svg/menu.svg" class="filter-blue" style="height: 100%">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card m-0 p-2 mt-3">
+                                        <div class="card m-0 p-0 bg-warning position-absolute h-100 w-100"
+                                            style="opacity: 20%; top:0; left: 0;"></div>
+                                        <div class="row m-0 p-2">
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center"
+                                                style="height: 3rem; width: 3rem;">
+                                                <img src="img/svg/Layers.svg">
+                                            </div>
+
+                                            <div class="row col-8 m-0 p-0">
+                                                <h6 class="m-0 p-0">Group lunch celebration</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 2 Days</p>
+                                            </div>
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center">
+                                                <p class="m-0 p-0 d-flex justify-content-end">+28%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-0 p-2 mt-3">
+                                        <div class="card m-0 p-0 bg-green position-absolute h-100 w-100"
+                                            style="opacity: 20%; top:0; left: 0;"></div>
+                                        <div class="row m-0 p-2">
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center"
+                                                style="height: 3rem; width: 3rem;">
+                                                <img src="img/svg/Layers.svg">
+                                            </div>
+
+                                            <div class="row col-8 m-0 p-0">
+                                                <h6 class="m-0 p-0">Group lunch celebration</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 2 Days</p>
+                                            </div>
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center">
+                                                <p class="m-0 p-0 d-flex justify-content-end">+28%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-0 p-2 mt-3">
+                                        <div class="card m-0 p-0 bg-red position-absolute h-100 w-100"
+                                            style="opacity: 20%; top:0; left: 0;"></div>
+                                        <div class="row m-0 p-2">
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center"
+                                                style="height: 3rem; width: 3rem;">
+                                                <img src="img/svg/Layers.svg">
+                                            </div>
+
+                                            <div class="row col-8 m-0 p-0">
+                                                <h6 class="m-0 p-0">Group lunch celebration</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 2 Days</p>
+                                            </div>
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center">
+                                                <p class="m-0 p-0 d-flex justify-content-end">+28%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card m-0 p-2 mt-3">
+                                        <div class="card m-0 p-0 bg-purple position-absolute h-100 w-100"
+                                            style="opacity: 20%; top:0; left: 0;"></div>
+                                        <div class="row m-0 p-2">
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center"
+                                                style="height: 3rem; width: 3rem;">
+                                                <img src="img/svg/Layers.svg">
+                                            </div>
+
+                                            <div class="row col-8 m-0 p-0">
+                                                <h6 class="m-0 p-0">Group lunch celebration</h6>
+                                                <p class="m-0 p-0 text-muted fw-semibold">Due in 2 Days</p>
+                                            </div>
+                                            <div class="row col-2 m-0 p-0 d-flex align-items-center">
+                                                <p class="m-0 p-0 d-flex justify-content-end">+28%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--TRENDS 2-->
+
+                        <div class="row m-0 p-2 col-lg-4">
+                            <div class="card m-0 p-0" id="Trend_2">
+                                <div class="row m-0 p-0 my-4 mx-auto" id="InnerCard">
+                                    <div class="row m-0 p-0">
+                                        <div class="container-fluid col-6 m-0 p-0">
+                                            <h5 class="m-0 p-0">Trends</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Latest tech trends</p>
+                                        </div>
+                                        <div
+                                            class="container-fluid col-6 m-0 p-0 d-flex justify-content-end align-items-center">
+                                            <button class="btn btn-sm m-0 p-1 me-2" id="Menu">
+                                                <img src="img/svg/menu.svg" class="filter-blue" style="height: 100%">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                                <img src="img/svg/brand-logos/plurk.svg" style="height: 1.6rem">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 ps-2 col-8">
+                                            <h5 class="m-0 p-0">Top Authors</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Ricky Hunt, Sandra Trepp</p>
+                                        </div>
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 px-2 my-3 bg-light d-flex align-items-center justify-content-center"
+                                                style="border-radius: 10%;">
+                                                <p class="m-0 p-0 text-muted fw-semibold">+82$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                                <img src="img/svg/brand-logos/telegram.svg" style="height: 1.6rem">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 ps-2 col-8">
+                                            <h5 class="m-0 p-0">Top Authors</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Ricky Hunt, Sandra Trepp</p>
+                                        </div>
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 px-2 my-3 bg-light d-flex align-items-center justify-content-center"
+                                                style="border-radius: 10%;">
+                                                <p class="m-0 p-0 text-muted fw-semibold">+280$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                                <img src="img/svg/brand-logos/vimeo.svg" style="height: 1.6rem">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 ps-2 col-8">
+                                            <h5 class="m-0 p-0">Top Authors</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Ricky Hunt, Sandra Trepp</p>
+                                        </div>
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container px-2 my-3 my-2 bg-light d-flex align-items-center justify-content-center"
+                                                style="border-radius: 10%;">
+                                                <p class="m-0 p-0 text-muted fw-semibold">+4500$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                                <img src="img/svg/brand-logos/bebo.svg" style="height: 1.6rem">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 ps-2 col-8">
+                                            <h5 class="m-0 p-0">Top Authors</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Ricky Hunt, Sandra Trepp</p>
+                                        </div>
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 px-2 my-3 bg-light d-flex align-items-center justify-content-center"
+                                                style="border-radius: 10%;">
+                                                <p class="m-0 p-0 text-muted fw-semibold">+686$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0 mt-3">
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 p-3 bg-light" style="border-radius: 10%;">
+                                                <img src="img/svg/brand-logos/kickstarter.svg" style="height: 1.6rem">
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 p-0 ps-2 col-8">
+                                            <h5 class="m-0 p-0">Top Authors</h5>
+                                            <p class="m-0 p-0 text-muted fw-semibold">Ricky Hunt, Sandra Trepp</p>
+                                        </div>
+                                        <div class="row m-0 p-0 col-2">
+                                            <div class="container m-0 px-2 my-3 bg-light d-flex align-items-center justify-content-center"
+                                                style="border-radius: 10%;">
+                                                <p class="m-0 p-0 text-muted fw-semibold">+726$</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row m-0 p-0 py-4" id="Footer">
+                        <div class="container-fluid d-flex align-items-center justify-content-between">
+                            <div class="text-dark order-2 order-md-1">
+                                <span class="text-muted fw-semibold me-1">2022©</span>
+                                <a href="#" class="text-muted" style="text-decoration: none;">Keenthemes</a>
+                            </div>
+
+                            <ul class="fw-semibold order-1 d-flex align-items-center" style="list-style: none;">
+                                <li class="menu-item">
+                                    <a href="#" class="text-muted px-2" style="text-decoration: none;">About</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="text-muted px-2" style="text-decoration: none;">Support</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#" class="text-muted px-2" style="text-decoration: none;">Purchase</a>
+                                </li>
+                            </ul>
+                            <!--end::Menu-->
+                        </div>
+                        <!--end::Container-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>

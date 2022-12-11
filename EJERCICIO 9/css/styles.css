@@ -1,0 +1,187 @@
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    font-family: poppins;
+}
+
+h5 {
+    font-weight: 500;
+    font-family: poppins;
+}
+
+
+h6,
+a {
+    font-weight: 100;
+    font-family: poppins;
+}
+
+p {
+    font-size: 0.9rem;
+    font-family: poppins;
+}
+
+.navbar-toggler {
+    border: solid 0px;
+    border-radius: 0;
+}
+
+.stroke {
+    -webkit-text-stroke: 1px #000;
+    color: transparent
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.fa {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+.btn {
+    width: 12rem;
+    height: 4rem;
+    background-color: #000;
+    color: white;
+    border-radius: 0;
+    font-family: poppins;
+    font-style: italic;
+}
+
+.btn:hover {
+    border: solid 2px #000;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.hover:hover {
+    scale: 1.2;
+    transition: 1s;
+}
+
+.hover2:hover {
+    opacity: 1 !important;
+    transition: 1s;
+}
+
+/*FROM MD TO 1920px*/
+@media (max-width: 1920px) {
+    .Inner {
+        width: 70vw;
+    }
+
+    .Titulo {
+        font-size: 8rem;
+    }
+
+    .Portfolio {
+        height: 38vh;
+        width: 38vh;
+    }
+}
+
+/*FROM SM TO MD*/
+@media (max-width: 992px) {
+    h3 {
+        font-size: 3rem !important;
+    }
+
+    h6 {
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+
+    .Inner {
+        width: 95vw;
+    }
+
+    .Titulo {
+        font-size: 3.5rem;
+    }
+
+    #Navbar .navbar-brand {
+        justify-content: left;
+    }
+
+    #Contenido {
+        left: 1em;
+    }
+
+    #About_2 img {
+        height: 4em;
+    }
+
+    .Portfolio {
+        height: 31vh;
+        width: 31vh;
+    }
+
+    .Autor img {
+        height: 8vw !important;
+        width: 8vw !important;
+    }
+
+    .Mapa {
+        height: 30vh;
+    }
+
+    #Footer {
+        height: auto !important;
+    }
+
+    .Social {
+        position: absolute;
+        width: 30vw;
+        justify-content: left;
+        left: 0;
+    }
+
+
+}
+
+/*FROM XS TO SM*/
+@media (max-width: 768px) {
+    .Portfolio {
+        height: auto;
+        width: 100%;
+    }
+
+    .Mapa {
+        height: 100vh;
+    }
+}
+
+/*XS*/
+@media (max-width: 576px) {
+    h5 {
+        font-size: 1rem;
+    }
+
+    .Inner {
+        width: 90vw;
+    }
+
+    .Titulo {
+        font-size: 3.5rem;
+    }
+
+    .Autor img {
+        height: 15vw !important;
+        width: 15vw !important;
+    }
+
+    .Mapa {
+        height: 50vh;
+    }
+
+    .Social {
+        width: 60%;
+
+    }
+}

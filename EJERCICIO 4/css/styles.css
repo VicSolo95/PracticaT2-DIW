@@ -1,0 +1,179 @@
+html{
+    width: 100vw;
+}
+
+*{
+/* Coolors Exported Palette - https://coolors.co/009ef7-50cd89-f1416c-ffc700-7239ea */
+
+/* CSS HEX */
+--carolina-blue: #009ef7ff;
+--emerald: #50cd89ff;
+--paradise-pink: #f1416cff;
+--mikado-yellow: #ffc700ff;
+--blue-violet: #7239eaff;
+
+}
+
+.filter-blue{
+    filter: invert(46%) sepia(26%) saturate(3553%) hue-rotate(173deg) brightness(99%) contrast(102%); 
+}
+.filter-yellow{
+    filter: invert(66%) sepia(100%) saturate(488%) hue-rotate(357deg) brightness(102%) contrast(106%);
+}
+.filter-red{
+    filter: invert(35%) sepia(80%) saturate(1864%) hue-rotate(322deg) brightness(97%) contrast(95%);
+}
+.filter-green{
+    filter: invert(69%) sepia(7%) saturate(2758%) hue-rotate(95deg) brightness(98%) contrast(96%);
+}
+.filter-purple{
+    filter: invert(29%) sepia(51%) saturate(6975%) hue-rotate(252deg) brightness(92%) contrast(99%);
+}
+.filter-invert{
+    filter: invert(100%);
+}
+
+.bg-blue {
+    background-color: var(--carolina-blue);
+    color: white;
+    font-weight: bold;
+}
+.text-blue {
+    color: var(--carolina-blue);
+    text-decoration: none;
+}
+.bg-red {
+    background-color: var(--paradise-pink);
+    color: white;
+    font-weight: bold;
+}
+.text-red {
+    color: var(--paradise-pink);
+}
+.bg-green {
+    background-color: var(--emerald);
+    color: white;
+    font-weight: bold;
+}
+.text-green {
+    color: var(--emerald);
+}
+.bg-purple {
+    background-color: var(--blue-violet);
+    color: white;
+    font-weight: bold;
+}
+.text-purple {
+    color: var(--blue-violet);
+}
+
+p, h6 {
+    font-size: 0.9rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+.card{
+    border: none;
+}
+
+.navbar{
+    max-width: 100vw;
+}
+
+#Wrapper, #Background{
+    width: 100%;
+}
+
+#Inner {
+    width: 65vw;
+}
+#InnerNavbar {
+    width: 65vw;
+}
+#InnerCard {
+    width: 90%;
+}
+
+.btn {
+    height: 3rem;
+    line-height: 2rem;
+    width: 7rem;
+    align-items: center;
+}
+
+#Menu {
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+}
+
+
+/*FROM MD TO 1920px*/
+@media (max-width: 1920px) {}
+
+/*FROM SM TO MD*/
+@media (max-width: 992px) {
+
+    p,h6{
+        font-size: 0.75rem !important;
+    }
+    #Inner {
+        width: 95vw;
+    }
+    #InnerNavbar {
+        width: 100vw;
+    }
+    #InnerCard {
+        width: 90%;
+    }
+    .navbar img{
+        height: 1.5rem !important;
+    }
+    #Trend img{
+        height: 1.8rem;
+    }
+    #Company{
+        height: 12vh!important;
+        margin-bottom: 0;
+    }
+    #CRM{
+        height: 12vh!important;
+        margin-top: 0;
+    }
+    #SAAS{
+        background-position: right right;
+    }
+
+    #Activities{
+        height: 60vh;
+    }
+    #Divider{
+        left: 3.8rem !important;
+        top: 85% !important;
+        height: 45vh !important;
+    }
+    #Tabla{
+        overflow-x: auto; 
+    }
+    #T_Author, #T_Actions{
+        width: 40vw !important;
+    }
+    #T_Company, #T_Progress{
+        width: 30vw !important;
+    }
+}
+
+/*FROM XS TO SM*/
+@media (max-width: 768px) {
+    
+}
+
+/*XS*/
+@media (max-width: 576px) {
+    
+    
+}
+
